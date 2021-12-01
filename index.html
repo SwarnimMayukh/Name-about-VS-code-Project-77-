@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first consol project</title>
+    </head>
+    <body>
+        <h4>To view console please click inspect.</h4>
+        <h2>Calculator</h2>
+        <link rel="stylesheet" href="style.css">
+        <div>
+            First number   <input type="number" class="ibox" id="input1">
+            </div>
+            <br><br>
+            <div>
+            Second Number   <input type="number" class="ibox" id="input2">
+            </div>
+            <br><br>
+            <button id="b1" onclick="added()">ADD</button>
+             <button id="b2" onclick="sub()">subtract</button>
+             <button id="b3" onclick="mul()">Multiplication</button>
+             <button id="b4" onclick="div()">Divison</button>
+            <br>
+            <h2>About Visual Studio (VS Code).</h2>
+             <b>
+             <h1>What is Visual Studio (VS Code) ?</h1>
+             <p>
+                Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control. It aims to provide just the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs, such as Visual Studio IDE.
+                           </h2>
+             </p>
+             <h1>This is how you can setup visual studio .</h1>
+             <p>
+                Step 1 - Make sure your computer is ready for Visual Studio.
+                </p> <p>
+                Step 2 - Download Visual Studio.
+                   </p> <p>
+                Step 3 - Install the Visual Studio Installer.
+                  </p> <p>
+                Step 4 - Choose workloads.
+                 </p>
+                Step 5 - Choose individual components (optional)
+                 <p>
+                Step 6 - Install language packs (optional)
+                   </p>
+                Step 7 - Select the installation location (optional)  
+                <p>
+                Step 8 - Start developing      
+                   </p>
+                   <a class="Articles" href="https://visualstudio.microsoft.com/downloads" target="_blank">Download Visual Studios.</a>
+                </b>
+        <script>
+              console.log("My first console project");
+            var first_name ="Swarnim";
+            var last_name ="Mayukh";
+            var full_name = first_name.concat(last_name);
+            console.log(full_name);
+            var a ="1"
+            var b ="5"
+         console.log(a);
+         console.log(b);
+          var add = a + b
+          console.log(add);
+          function added(){
+  var ans = 
+      Number(document.getElementById("input1").value)+
+      Number(document.getElementById("input2").value);
+  window.alert(ans);
+          } 
+function sub(){
+  var ans = 
+      Number(document.getElementById("input1").value)-
+      Number(document.getElementById("input2").value);
+  window.alert(ans);
+}
+function mul(){
+  var ans = 
+      Number(document.getElementById("input1").value)*
+      Number(document.getElementById("input2").value);
+  window.alert(ans);
+}
+function div(){
+  var ans = 
+      Number(document.getElementById("input1").value)/
+      Number(document.getElementById("input2").value);
+  window.alert(ans);
+}
+            
+        </script>
+    </body>
+</html>
